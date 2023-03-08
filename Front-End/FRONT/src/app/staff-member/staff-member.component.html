@@ -1,59 +1,77 @@
-<form [formGroup]="staffForm" (ngSubmit)="onSubmit()">
-  <div>
-    <label for="numeroIdentidad">Número de identidad:</label>
-    <input id="numeroIdentidad" type="number" formControlName="numeroIdentidad">
+<div class="container">
+  <h2 class="border">ParcheInfo</h2>
+  <h2 class="wave">ParcheInfo</h2>
+</div>
+
+<div class="containerForm">
+  <div class="modalForm">
+    <form [formGroup]="staffForm" (ngSubmit)="onSubmit()">
+      <div class="containerFormColumns">
+        <div class="columnForm column1">
+          <div>
+            <label for="numeroIdentidad">Número de identidad:</label>
+            <br>
+            <input id="numeroIdentidad" type="number" formControlName="numeroIdentidad">
+          </div>
+
+          <div>
+            <label for="nombre">Nombre:</label>
+            <br>
+            <input id="nombre" type="text" formControlName="nombre">
+          </div>
+
+          <div>
+            <label for="apellidos">Apellidos:</label>
+            <br>
+            <input id="apellidos" type="text" formControlName="apellidos">
+          </div>
+
+          <div>
+            <label for="celular">Celular:</label>
+            <br>
+            <input id="celular" type="text" formControlName="celular">
+          </div>
+
+          <div>
+            <label for="direccion">Dirección:</label>
+            <br>
+            <input id="direccion" type="text" formControlName="direccion">
+          </div>
+        </div>
+
+        <div class="columnForm column2">
+          <div>
+            <label for="grupoSanguineo">Grupo sanguíneo:</label>
+            <br>
+            <input id="grupoSanguineo" type="text" formControlName="grupoSanguineo">
+          </div>
+
+          <div>
+            <label for="nombreAcudiente">Nombre del acudiente:</label>
+            <br>
+            <input id="nombreAcudiente" type="text" formControlName="nombreAcudiente">
+          </div>
+
+          <div>
+            <label for="contactoAcudiente">Contacto del acudiente:</label>
+            <br>
+            <input id="contactoAcudiente" type="text" formControlName="contactoAcudiente">
+          </div>
+
+          <div>
+            <label for="area">Área:</label>
+            <br>
+            <input id="area" type="text" formControlName="area">
+          </div>
+
+          <div>
+            <label for="fechaNacimiento">Fecha de nacimiento:</label>
+            <br>
+            <input id="fechaNacimiento" type="date" formControlName="fechaNacimiento">
+          </div>
+        </div>
+      </div>
+        <button type="submit">Guardar</button>
+    </form>
   </div>
-
-  <div>
-    <label for="nombre">Nombre:</label>
-    <input id="nombre" type="text" formControlName="nombre">
-  </div>
-
-  <div>
-    <label for="apellidos">Apellidos:</label>
-    <input id="apellidos" type="text" formControlName="apellidos">
-  </div>
-
-  <div>
-    <label for="img">Imagen:</label>
-    <input id="img" type="text" formControlName="img">
-  </div>
-
-  <div>
-    <label for="celular">Celular:</label>
-    <input id="celular" type="text" formControlName="celular">
-  </div>
-
-  <div>
-    <label for="direccion">Dirección:</label>
-    <input id="direccion" type="text" formControlName="direccion">
-  </div>
-
-  <div>
-    <label for="grupoSanguineo">Grupo sanguíneo:</label>
-    <input id="grupoSanguineo" type="text" formControlName="grupoSanguineo">
-  </div>
-
-  <div>
-    <label for="nombreAcudiente">Nombre del acudiente:</label>
-    <input id="nombreAcudiente" type="text" formControlName="nombreAcudiente">
-  </div>
-
-  <div>
-    <label for="contactoAcudiente">Contacto del acudiente:</label>
-    <input id="contactoAcudiente" type="text" formControlName="contactoAcudiente">
-  </div>
-
-  <div>
-    <label for="area">Área:</label>
-    <input id="area" type="text" formControlName="area">
-  </div>
-
-  <div>
-    <label for="fechaNacimiento">Fecha de nacimiento:</label>
-    <input id="fechaNacimiento" type="date" formControlName="fechaNacimiento">
-
-  </div>
-<button type="submit">Guardar</button>
-
-</form>
+</div>

@@ -15,7 +15,7 @@ export class StaffMemberComponent {
       numeroIdentidad: ['', Validators.required],
       nombre: ['', Validators.required],
       apellidos: ['', Validators.required],
-      img: ['', Validators.required],
+      img: "nn",
       celular: ['', Validators.required],
       direccion: ['', Validators.required],
       grupoSanguineo: ['', Validators.required],
