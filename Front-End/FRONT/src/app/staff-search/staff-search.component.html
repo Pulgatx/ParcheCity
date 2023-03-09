@@ -1,0 +1,39 @@
+<div class="container">
+  <h2 class="border">ParchePuntos</h2>
+  <h2 class="wave">ParchePuntos</h2>
+</div>
+
+<div class="containerSelect">
+  <div class="select">
+    <select name="format" id="format" [(ngModel)]="staffSelected">
+      <option selected enable>Selecciona el nombre del Staff</option>
+      <option *ngFor="let employee of staffList" value={{employee.numeroIdentidad}}>
+        {{employee.numeroIdentidad}} {{employee.nombre}}
+      </option>
+    </select>
+  </div>
+  <div class="buttonCont">
+    <button (click)="evaluate()">EVALUAR</button>
+  </div>
+</div>
+
+<div class="infoSelected" *ngIf="mostrarStaff">
+    <div *ngFor="let employee of oneStaff">
+      <div class="nombreApellido">
+        <p>
+          {{employee.nombre}} {{employee.apellidos}}
+        </p>
+      </div>  
+      <div class="areaStaff">
+        <p>
+          {{employee.area}}
+        </p>
+      </div>
+      <div class="areaStaff">
+        <p>
+          {{employee.numeroIdentidad}}
+        </p>
+      </div>
+    </div>
+</div>
+

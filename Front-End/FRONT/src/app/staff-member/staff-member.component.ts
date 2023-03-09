@@ -8,7 +8,7 @@ import { StaffService } from './staff-member.service';
   styleUrls: ['./staff-member.component.css']
 })
 export class StaffMemberComponent {
-  staffForm: FormGroup;
+  staffForm: FormGroup; 
 
   constructor(private formBuilder: FormBuilder, private staffService: StaffService) {
     this.staffForm = this.formBuilder.group({
@@ -38,7 +38,5 @@ export class StaffMemberComponent {
         console.error('Error adding staff member:', error);
       }
     );
-
-    console.log(staff);
   }
 }

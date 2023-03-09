@@ -6,11 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StaffMemberComponent } from './staff-member/staff-member.component';
 import { HttpClientModule } from '@angular/common/http';
+import { StaffSearchComponent } from './staff-search/staff-search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StaffMemberComponent
+    StaffMemberComponent,
+    StaffSearchComponent
   ],
   imports: [
     BrowserModule,
